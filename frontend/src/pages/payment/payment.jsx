@@ -43,6 +43,8 @@ const PaymentPage = () => {
         setPaymentStatus(null);
 
         try {
+
+            // for local system replace ${import.meta.env.VITE_REACT_BACKEND_URL} with http://localhost:3000
             const response = await axios.post(`${import.meta.env.VITE_REACT_BACKEND_URL}/process-payment`, {
                 amount: product.price,
             });
@@ -75,7 +77,7 @@ const PaymentPage = () => {
             <ToastContainer />
 
             {/* background  */}
-            <Background/>
+            <Background />
 
             {/* loader upto the product detail not loaded  */}
             {(!tax || !subtotal || !totalAmount) && <div className="min-h-screen flex items-center justify-center">

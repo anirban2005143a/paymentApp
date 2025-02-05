@@ -52,7 +52,7 @@ const PaymentPage = () => {
         } catch (error) {
             console.log(error)
             setPaymentStatus("failed");
-            toast.error("Payment failed")
+            toast.error(error.message)
 
         } finally {
             setIsLoading(false);

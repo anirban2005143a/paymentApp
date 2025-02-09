@@ -5,7 +5,7 @@ demo video - https://drive.google.com/file/d/1n2qjqLp1amsZmZcWND4noNEg9JsZkv6F/v
 Tech Stack - react , express , tailwind
 Used libreries - react-toastify , react-icons , gsap(for animation)
 
-pre requisite -** node must installed on local system**
+pre requisite -**node must installed on local system**
 
 Instructions to run on local system -
 1. clone the repo on local system
